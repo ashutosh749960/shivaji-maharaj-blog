@@ -1,0 +1,49 @@
+// Back to Top Button
+let backToTopBtn = document.createElement("button");
+backToTopBtn.innerText = "↑ Top";
+backToTopBtn.id = "backToTop";
+document.body.appendChild(backToTopBtn);
+
+window.onscroll = function() {
+    if (document.documentElement.scrollTop > 300) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+};
+
+backToTopBtn.onclick = function() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+// Dark Mode Toggle
+let darkModeBtn = document.createElement("button");
+darkModeBtn.innerText = "🌙 Dark Mode";
+darkModeBtn.id = "darkModeToggle";
+document.body.appendChild(darkModeBtn);
+
+darkModeBtn.onclick = function() {
+    document.body.classList.toggle("dark-mode");
+};
+
+// Dynamic Greeting
+let greeting = document.createElement("p");
+greeting.id = "greetingMessage";
+document.querySelector("header").appendChild(greeting);
+
+function updateGreeting() {
+    let hour = new Date().getHours();
+    let message = "";
+
+    if (hour < 12) {
+        message = "Good Morning! Learn about the great Shivaji Maharaj.";
+    } else if (hour < 18) {
+        message = "Good Afternoon! Explore the history of Shivaji Maharaj.";
+    } else {
+        message = "Good Evening! Discover the legacy of Shivaji Maharaj.";
+    }
+
+    document.getElementById("greetingMessage").innerText = message;
+}
+
+updateGreeting();

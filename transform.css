@@ -1,0 +1,151 @@
+/* General Styles */
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8; /* Increases space between lines */
+    font-size: 18px; /* Makes text larger */
+    color: #333; /* Dark grey for better readability */
+}
+
+/* Section Styling */
+section {
+    width: 80%;
+    margin: 20px auto;
+    max-width: 900px; /* Limits width for better readability */
+}
+
+/* Article Styling */
+article {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: justify; /* Aligns text for a clean look */
+}
+
+/* Headings */
+h1 {
+    font-size: 42px; /* Makes the title large and bold */
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 26px;
+    color: #d9534f;
+    margin-bottom: 10px;
+}
+
+/* Image Styling */
+article img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/* Back to Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Dark Mode Toggle */
+#darkModeToggle {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    background-color: #343a40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode article {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode h1, .dark-mode h2 {
+    color: #ffcc00;
+}
+/* Header Styling */
+header {
+    background-color: #d9534f;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Main Title (h1) */
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Subheading (Paragraph Inside Header) */
+header p {
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #343a40;
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
